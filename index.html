@@ -4,27 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Bank Account Class</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <section>
+    <section class="flex flex-col items-center mt-5">
 
-        <div id="crtAccDiv" class="">
-            <label for="accName">Enter Your Name</label>
-            <input type="text" class="" id="accName" placeholder="Enter Name">
+        <div id="crtAccDiv" class="bg-white text-[#727272] shadow-lg flex flex-col p-8 rounded-xl">
 
-            <label for="accAmount">Enter Your Amount</label>
-            <input type="text" class="" id="accAmount" placeholder="Enter Amount">
+            <div class="flex flex-row">
+                <label for="accName" class="w-36">Enter Your Name :</label>
+                <input type="text" class="border px-2 py-1 rounded-lg mb-3" id="accName" placeholder="Enter Name">
+            </div>
+            <div class="flex flex-row">
+                <label for="accAmount" class="w-36">Enter Your Amount :</label>
+                <input type="number" class="border px-2 py-1 rounded-lg mb-3" id="accAmount" placeholder="Enter Amount">
+            </div>
+            <button class="border mx-17 mt-3 rounded-lg duration-500 hover:cursor-pointer hover:scale-95" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
 
-            <button class="" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
         </div>
+        <div class="flex flex-col items-center">
 
-        <h2>Accounts</h2>
-        <div id="addAccDiv"></div>  
+            <table class="bg-white flex flex-col font-[Montserrat] my-6">
+                <tbody id="addAccDiv">
+                    <tr id="tableHeadings"></tr>
+                </tbody>
+            </table>
+
+        </div>
 
     </section>
 
@@ -33,3 +46,21 @@
 <script src="app.js"></script>
 
 </html>
+
+<!-- <div id="crtAccDiv" class="bg-gray-200 text-gray-600 flex flex-col border p-8 rounded-md">
+
+    <div class="flex flex-row">
+        <label for="accName" class="w-36">Enter Your Name :</label>
+        <input type="text" class="border px-2 py-1 rounded-lg mb-3" id="accName" placeholder="Enter Name">
+    </div>
+    <div class="flex flex-row">
+        <label for="accAmount" class="w-36">Enter Your Amount :</label>
+        <input type="number" class="border px-2 py-1 rounded-lg mb-3" id="accAmount" placeholder="Enter Amount">
+    </div>
+    <button class="border mx-17 mt-3 rounded-lg duration-500 hover:cursor-pointer hover:scale-95" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
+
+</div>
+<div class="flex flex-col items-center">
+    <h2 class="accTxt underline my-5 text-[30px]"></h2>
+    <table id="addAccDiv" class="flex flex-col gap-5 font-[Montserrat]"></table>
+</div> -->
