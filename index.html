@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Account Class</title>
+    <title>Bank Management App</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,7 @@
 
         <div id="crtAccDiv" class="bg-white text-[#727272] shadow-lg flex flex-col p-8 rounded-xl">
 
+            <h1 class="pb-5 text-center font-bold text-[20px] text-[#575757]">Bank Management App</h1>
             <div class="flex flex-row">
                 <label for="accName" class="w-36">Enter Your Name :</label>
                 <input type="text" class="border px-2 py-1 rounded-lg mb-3" id="accName" placeholder="Enter Name">
@@ -26,7 +27,7 @@
                 <label for="accAmount" class="w-36">Enter Your Amount :</label>
                 <input type="number" class="border px-2 py-1 rounded-lg mb-3" id="accAmount" placeholder="Enter Amount">
             </div>
-            <button class="border mx-17 mt-3 rounded-lg duration-500 hover:cursor-pointer hover:scale-95" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
+            <button class="text-[#3f3f3f] border mx-17 mt-3 rounded-lg duration-500 hover:cursor-pointer hover:scale-95" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
 
         </div>
         <div class="flex flex-col items-center">
@@ -46,21 +47,3 @@
 <script src="app.js"></script>
 
 </html>
-
-<!-- <div id="crtAccDiv" class="bg-gray-200 text-gray-600 flex flex-col border p-8 rounded-md">
-
-    <div class="flex flex-row">
-        <label for="accName" class="w-36">Enter Your Name :</label>
-        <input type="text" class="border px-2 py-1 rounded-lg mb-3" id="accName" placeholder="Enter Name">
-    </div>
-    <div class="flex flex-row">
-        <label for="accAmount" class="w-36">Enter Your Amount :</label>
-        <input type="number" class="border px-2 py-1 rounded-lg mb-3" id="accAmount" placeholder="Enter Amount">
-    </div>
-    <button class="border mx-17 mt-3 rounded-lg duration-500 hover:cursor-pointer hover:scale-95" id="crtBkAccBtn">CREATE BANK ACCOUNT</button>
-
-</div>
-<div class="flex flex-col items-center">
-    <h2 class="accTxt underline my-5 text-[30px]"></h2>
-    <table id="addAccDiv" class="flex flex-col gap-5 font-[Montserrat]"></table>
-</div> -->
